@@ -1,0 +1,29 @@
+.app{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sections{
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: lightsalmon;
+    position: relative;
+    top: 70px;//make this section div relative and start from 70px from top
+    scroll-behavior: smooth;
+    scroll-snap-points-y: repeat(calc(100vh - 70px));
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;//for firefox
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    overflow: scroll;
+
+
+
+    > *{ //child seelector to apply to each section like portfolio section, testimonial section, intro etc
+        width: 100vw;
+        height: calc(100vh - 70px);
+        scroll-snap-align: start;
+    }
+}
+
