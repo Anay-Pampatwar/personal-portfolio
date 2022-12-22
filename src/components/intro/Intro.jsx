@@ -14,12 +14,14 @@ export default function Intro({menuOpen,setMenuopen}) {
      </div>
      <div className="right">
       <div className="wrapper">
-        <h2>Hi There, I am</h2>
+        <h2>Hi There👋, I am</h2>
         <h1>Anay Pampatwar</h1>
+        <h2> MS in Software Engineering Systems</h2>
+        <h3>🏫 Northeastern University, Boston</h3>
 
         <Typed
       strings={[
-            "I'm a Software Engg Grad Student.",
+            "I'm a Software Development Enthusiast.",
             "I Love Software Development.",
             "I am a learner for life...",
           ]}

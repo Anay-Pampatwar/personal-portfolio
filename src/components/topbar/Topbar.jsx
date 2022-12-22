@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Topbar.scss"
 import {Person, Mail} from "@mui/icons-material"
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 //to check if the menu is open, a state is defined in app.jsx
 
@@ -17,7 +19,13 @@ export default function Topbar({menuOpen,setMenuopen}) {
             </div>
             <div className="itemContainer">
                 <Mail className='icon'/>
-                <span>anayp0019@gmail.com</span>
+                <span>pampatwar.a@northeasstern.edu</span>
+            </div>
+            <div className="itemContainer">
+              <a target="_blank" href='https://www.linkedin.com/in/anay-pampatwar28/'><LinkedInIcon className='icon'/></a>
+            </div>
+            <div className="itemContainer">
+              <a target="_blank" href='https://github.com/Anay-Pampatwar'><GitHubIcon className='icon'/></a>
             </div>
         
         </div>

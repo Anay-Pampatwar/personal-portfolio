@@ -8,7 +8,10 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter'
 import AccountTreeIcon from '@mui/icons-material/AccountTree'
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium'
 import CodeIcon from '@mui/icons-material/Code'
+import ThreePIcon from '@mui/icons-material/ThreeP'
 import { Typography } from '@mui/material'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkIcon from '@mui/icons-material/Link';
 
 //resume = portfolio
 export default function Portfolio() {
@@ -29,8 +32,8 @@ export default function Portfolio() {
               <TabList
                 onChange={handleChange}
                 aria-label="Resume"
-                textColor="secondary"
-                indicatorColor="secondary"
+                textColor="primary"
+                indicatorColor="primary"
                 centered
                 variant="fullWidth"
                 scrollButtons="auto"
@@ -38,32 +41,39 @@ export default function Portfolio() {
                 <Tab
                   //icon={<FavoriteIcon />}
                   iconPosition="top"
-                  label="Education"
+                  label="About"
                   value="1"
+                  icon={<ThreePIcon />}
+                />
+                <Tab
+                  //icon={<FavoriteIcon />}
+                  iconPosition="top"
+                  label="Education"
+                  value="2"
                   icon={<SchoolIcon />}
                 />
                 <Tab
                   label="Experience"
                   iconPosition="top"
-                  value="2"
+                  value="3"
                   icon={<BusinessCenterIcon />}
                 />
                 <Tab
                   label="Projects"
                   iconPosition="top"
-                  value="3"
+                  value="4"
                   icon={<AccountTreeIcon />}
                 />
                 <Tab
-                  label="Certifications"
+                  label="Certification"
                   iconPosition="top"
-                  value="4"
+                  value="5"
                   icon={<WorkspacePremiumIcon />}
                 />
                 <Tab
                   label="Skills"
                   iconPosition="top"
-                  value="5"
+                  value="6"
                   icon={<CodeIcon />}
                 />
               </TabList>
@@ -71,7 +81,36 @@ export default function Portfolio() {
             <TabPanel value="1">
               <div className="item">
                 <h3>
-                  <SchoolIcon /> Education
+                  <ThreePIcon /> A little about me...
+                  <hr
+                    style={{
+                      color: 'aliceblue',
+                      backgroundColor: 'aliceblue',
+                      height: 1,
+                    }}
+                  />
+                  <br />
+                  <h4>
+                    Hi! I am a graduate student at Northeastern University
+                    majoring in Software Engineering Systems. I am a passionate
+                    web developer with a focus on the MERN stack. I am an AWS
+                    Certified Solution Architect Associate and my goal through
+                    my masters is to make a career in the domain of cloud
+                    computing. Essentially in Distributed Systems and creating
+                    Infrastructures with technologies like Kubernetes and
+                    Terraform.
+                  </h4>
+                  <br />
+                  <br />
+                </h3>
+
+                <img src="https://thumbs.dreamstime.com/b/northeastern-university-boston-massachusetts-private-research-established-127076883.jpg"></img>
+              </div>
+            </TabPanel>
+            <TabPanel value="2">
+              <div className="item">
+                <h3>
+                  <SchoolIcon /> My Education
                   <hr
                     style={{
                       color: 'aliceblue',
@@ -81,42 +120,92 @@ export default function Portfolio() {
                   />
                   <br />
                   {/* <h4>Masters in Software Engineering Systems</h4> */}
-                  <h4 >Northeastern University, Boston, MA </h4>
+                  <h4>Northeastern University, Boston, MA </h4>
                   <br />
-                  <h4 className='expected'>Expected May 2024</h4>
-                  <br/>
-                  <h4 className="univ"><b>Master of Science in Software Engineering Systems</b></h4>
+                  <h4 className="expected">Expected May 2024</h4>
+                  <br />
+                  <h4 className="univ">
+                    <b>Master of Science in Software Engineering Systems</b>
+                  </h4>
                   <br />
                   <h4>Relevant Coursework:</h4>
-                  <br/>
+                  <br />
                   <h4>Web Design and User Experience Engineering, </h4>
-                  <br/>
-                    <h4>Concepts of object-oriented design</h4>
+                  <br />
+                  <h4>Concepts of object-oriented design</h4>
                 </h3>
 
                 <img src="https://thumbs.dreamstime.com/b/northeastern-university-boston-massachusetts-private-research-established-127076883.jpg"></img>
               </div>
             </TabPanel>
-            <TabPanel value="2">
+            <TabPanel value="3">
               <div className="item">
-                <h3>Professional Experience
-                <hr
+                <h3>
+                  <BusinessCenterIcon /> Work Experience
+                  <hr
                     style={{
                       color: 'aliceblue',
                       backgroundColor: 'aliceblue',
                       height: 1,
                     }}
                   />
+                  <br />
+                  <h4>
+                    •Provided daily cloud support & maintained client’s cloud
+                    infrastructure consisting of 50+ services spread across 7
+                    AWS accounts and 3 regions 
+                    <br/>• Innovated CloudFormation
+                    templates to provision EC2 instances, RDS, CloudWatch
+                    alarms, IAM users and roles using parameters, mappings,
+                    resources, outputs <br/>• Regulated and maintained 20+ EC2
+                    servers along with managing the user provisioning, group
+                    provisioning, user ownership of 25 users and changing file
+                    permissions on OS level on these servers <br/>• Managed the
+                    access of AWS services using IAM. Restricting the users by
+                    providing the minimum access to AWS services with the help
+                    of User groups 
+                  </h4>
                   <br/>
-                  <h4>Infosys Limited Pune India</h4>
-                  </h3>
-                  
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                </h3>
+
                 <img src="https://thumbs.dreamstime.com/b/northeastern-university-boston-massachusetts-private-research-established-127076883.jpg"></img>
               </div>
             </TabPanel>
-            <TabPanel value="3">Item Three</TabPanel>
-            <TabPanel value="4">Item Four</TabPanel>
-            <TabPanel value="5">Item Five</TabPanel>
+            
+            <TabPanel value="4">
+              <div className="item">
+                <h3>
+                  <AccountTreeIcon /> My Projects
+                  <hr
+                    style={{
+                      color: 'aliceblue',
+                      backgroundColor: 'aliceblue',
+                      height: 1,
+                    }}
+                  />
+                  <br />
+                  <h4>
+                    Stocks Portfolio Management MERN Web App.
+                    <br/> Live: <a href='https://stocktradeportfolio.netlify.app/'>https://stocktradeportfolio.netlify.app/ <LinkIcon/></a>
+                    <br/>
+                    <a href='https://github.com/Anay-Pampatwar/Stocks-Portfolio-Manager-React-App'><GitHubIcon/></a>
+                  </h4>
+                  <br />
+                  <br />
+                </h3>
+
+                <img src="https://thumbs.dreamstime.com/b/northeastern-university-boston-massachusetts-private-research-established-127076883.jpg"></img>
+              </div>
+            </TabPanel>
+
+            <TabPanel value="5">Item Four</TabPanel>
+            <TabPanel value="6">Item Five</TabPanel>
           </TabContext>
         </Box>
       </ul>
