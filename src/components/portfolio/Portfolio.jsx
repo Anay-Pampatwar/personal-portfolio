@@ -104,7 +104,7 @@ export default function Portfolio() {
                   <br />
                 </h3>
 
-                <img src="https://thumbs.dreamstime.com/b/northeastern-university-boston-massachusetts-private-research-established-127076883.jpg"></img>
+                <img src="https://raw.githubusercontent.com/Anay-Pampatwar/Anay-Pampatwar/main/github.jpg"></img>
               </div>
             </TabPanel>
             <TabPanel value="2">
@@ -151,6 +151,7 @@ export default function Portfolio() {
                   />
                   <br />
                   <h4>
+                    <span className='expected'>Infosys Limited, India - Sept 2019 to Sept 2022 - Cloud Solution Architect</span> <br/>
                     •Provided daily cloud support & maintained client’s cloud
                     infrastructure consisting of 50+ services spread across 7
                     AWS accounts and 3 regions 
@@ -174,14 +175,14 @@ export default function Portfolio() {
                   <br/>
                 </h3>
 
-                <img src="https://thumbs.dreamstime.com/b/northeastern-university-boston-massachusetts-private-research-established-127076883.jpg"></img>
+                <img src="https://i0.wp.com/boldblushblog.com/wp-content/uploads/2018/01/img_20171231_154252-01.jpeg?ssl=1"></img>
               </div>
             </TabPanel>
             
             <TabPanel value="4">
               <div className="item">
                 <h3>
-                  <AccountTreeIcon /> My Projects
+                  <AccountTreeIcon /> Projects I am working on
                   <hr
                     style={{
                       color: 'aliceblue',
@@ -192,10 +193,15 @@ export default function Portfolio() {
                   <br />
                   <h4>
                     Stocks Portfolio Management MERN Web App.
-                    <br/> Live: <a href='https://stocktradeportfolio.netlify.app/'>https://stocktradeportfolio.netlify.app/ <LinkIcon/></a>
+                    <br/> Live: <a target="_blank" href='https://stocktradeportfolio.netlify.app/'>https://stocktradeportfolio.netlify.app/ <LinkIcon/></a>
                     <br/>
-                    <a href='https://github.com/Anay-Pampatwar/Stocks-Portfolio-Manager-React-App'><GitHubIcon/></a>
+                    <a target="_blank" href='https://github.com/Anay-Pampatwar/Stocks-Portfolio-Manager-React-App'><GitHubIcon/></a>
+                    <br/>
+                    <br/>
+                    Recipe Suggestor And Meal Planner JavaFX Application
+                    <a target="_blank" href='https://github.com/Anay-Pampatwar/cerealkillers/tree/master'><GitHubIcon/></a>
                   </h4>
+                  
                   <br />
                   <br />
                 </h3>
@@ -204,7 +210,23 @@ export default function Portfolio() {
               </div>
             </TabPanel>
 
-            <TabPanel value="5">Item Four</TabPanel>
+            <TabPanel value="5"><div className="item">
+                <h3>
+                  <WorkspacePremiumIcon /> My Certification
+                  <hr
+                    style={{
+                      color: 'aliceblue',
+                      backgroundColor: 'aliceblue',
+                      height: 1,
+                    }}
+                  />
+                  <br/>
+                  AWS Certified Solution Architect Associte
+                  <h4>Validation Number: GQJP516JBEV11QGF<br/> View my certification here<a target="_blank" href='https://www.linkedin.com/posts/anay-pampatwar28_aws-certificate-activity-6830679042228854784-sqgc?utm_source=share&utm_medium=member_desktop'><LinkIcon/></a></h4>
+                </h3>
+
+                <img src="https://thumbs.dreamstime.com/b/northeastern-university-boston-massachusetts-private-research-established-127076883.jpg"></img>
+              </div></TabPanel>
             <TabPanel value="6">Item Five</TabPanel>
           </TabContext>
         </Box>
