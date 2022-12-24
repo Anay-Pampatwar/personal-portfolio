@@ -1,13 +1,20 @@
 @import "../../global.scss";
+
 .intro{
     background-color: aliceblue;
     display: flex;
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
 
     .left{
         flex: 0.5;
+        overflow: hidden;
         .imgContainer{
             width: calc(100vh);
             height: calc(100vh - 70px);
+            
             //background-color: rgba(188,74,60, 0.737);
             background-color: rgba(0, 217, 217, 0.874);
             border-radius: 90%;
@@ -15,11 +22,18 @@
             align-items: center;
             justify-content: center;
             transition: all 1s ease;
-            
-
+            @include mobile{
+                margin-top: 290px;
+                align-items: flex-start;
+                width: 600px;
+                height: 600px;
+            }
             img{
                 height: 100%;
                 object-fit: contain;
+                @include mobile{
+                    height: 54%;
+                }
 
                 
             }
@@ -45,19 +59,39 @@
             justify-content: center;
             align-items: baseline;
             
+            @include mobile{
+                padding-left: 10px;
+                align-items: center;
+            }
+
             h1{
                 font-size: 40px;
                 margin: 10px 0;
+
+                @include mobile{
+                    padding-left: 10px;
+                align-items: center;
+                    font-size: 35px;
+                    text-align: center;
+                }
 
             }
             h2{
                 font-size: 25px;
                 font-style: italic;
+                @include mobile{
+                    
+                    text-align: center;
+                }
 
             }
             h3{
                 font-size: 20px;
                 margin: 5px 0;
+                @include mobile{
+                    font-size: 20px;
+                    text-align: center;
+                }
 
                 
             }

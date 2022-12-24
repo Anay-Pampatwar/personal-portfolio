@@ -84,6 +84,10 @@ align-items: center;
     display: flex; //display and align items center will put everything in line
     align-items: center;
     margin-left: 30px;
+
+    @include mobile{
+        display: none;
+    }
 }
 
 //icon of email and phone
