@@ -23,10 +23,10 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <br></br>
       <h1>Resume</h1>
-      <ul>
+      {/* <ul> */}
         {/* Featured\/ */}
         {/* ///////////// */}
-        <Box sx={{ width: '100%' }}>
+        <Box className='box2' sx={{ width: '90%' }}>
           <TabContext value={value}>
             <Box sx={{ borderBottom: 3, borderColor: 'divider' }}>
               <TabList
@@ -304,7 +304,7 @@ export default function Portfolio() {
             </TabPanel>
           </TabContext>
         </Box>
-      </ul>
+      {/* </ul> */}
     </div>
   )
 }
