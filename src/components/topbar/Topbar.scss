@@ -8,7 +8,7 @@
     color: rgb(0, 91, 91);
     position: fixed;
     top: 0;
-    z-index: 2;//if this is not put then the sections will overlap on header
+    z-index: 12;//if this is not put then the sections will overlap on header
     transition: all 1s ease;
     &.active{
         background-color: $mainColor;
